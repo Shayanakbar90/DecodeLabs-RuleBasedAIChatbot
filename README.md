@@ -19,8 +19,9 @@ The chatbot can:
 
 ## Project Screenshot
 
-[View the chatbot demonstration](chatbot-demo.png)
-![Chatbot Demo 2](./chatbot-demo-2.png)
+[View Chatbot Screenshot 1](./chatbot-demo-1.png)
+
+[View Chatbot Screenshot 2](./chatbot-demo-2.png)
 
 ## How It Works
 
