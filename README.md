@@ -95,9 +95,17 @@ For example:
 
 ```text
 "   WHAT IS YOUR NAME   "
+```
 
+is normalized to:
 
-## Example Conversation
+```text
+"what is your name"
+```
+
+---
+
+## 💬 Example Conversation
 
 ```text
 User: hello
@@ -111,48 +119,69 @@ Nova: I don't understand that yet. Type 'help' to see what you can ask.
 
 User: exit
 Nova: Goodbye! Thanks for chatting with me.
+```
 
-Limitations
-Responds only to predefined inputs
-Does not understand conversation context
-Does not learn from previous interactions
-Does not use machine learning or a language model
-Does not permanently store chat history
-May not recognize differently worded questions
-Future Improvements
-Add keyword-based intent matching
-Support multiple phrases for each response
-Add fuzzy matching for spelling mistakes
-Expand the chatbot response library
-Store conversation history in a database
-Add automated testing
-Improve the user interface
-Add multilingual support
-Project Status
+---
 
+## ⚠️ Limitations
 
+![Rule Based](https://img.shields.io/badge/System-Rule--Based-orange)
+![Context](https://img.shields.io/badge/Context-Limited-lightgrey)
 
+- Responds only to predefined inputs
+- Does not understand broader conversation context
+- Does not learn from previous interactions
+- Does not use machine learning or a large language model
+- Does not permanently store conversation history
+- May not recognize differently worded questions
 
-The project is complete and publicly available through Streamlit Community Cloud.
+---
 
-Launch Live Application
+## 🚀 Future Improvements
 
-Author
-Shayan Akbar
+- Add keyword-based intent recognition
+- Support multiple phrases for each response
+- Add fuzzy matching for spelling mistakes
+- Expand the predefined response library
+- Store conversation history in a database
+- Add automated tests
+- Introduce multilingual support
 
-Artificial Intelligence Intern — DecodeLabs
+---
 
+## ✅ Project Status
 
+[![Status](https://img.shields.io/badge/Status-Completed-2ea44f)](https://github.com/Shayanakbar90/DecodeLabs-RuleBasedAIChatbot)
+[![Deployment](https://img.shields.io/badge/Deployment-Live-2ea44f)](https://decodelabs-rulebasedaichatbot-bpelv2npnxfmvtqegtv6ui.streamlit.app/)
+[![Platform](https://img.shields.io/badge/Platform-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
 
+The application is complete and publicly available through Streamlit Community Cloud.
 
+### [Launch the Live Application](https://decodelabs-rulebasedaichatbot-bpelv2npnxfmvtqegtv6ui.streamlit.app/)
 
+---
 
-This project was developed as part of the DecodeLabs Artificial Intelligence Training Program to demonstrate the implementation and deployment of a rule-based conversational application using Python and Streamlit.
+## 👨‍💻 Author
+
+### **Shayan Akbar**
+
+**Artificial Intelligence Intern | DecodeLabs**
+
+[![GitHub Profile](https://img.shields.io/badge/GitHub-Shayanakbar90-181717?logo=github&logoColor=white)](https://github.com/Shayanakbar90)
+[![Project Repository](https://img.shields.io/badge/Repository-View_Source-0969DA?logo=github&logoColor=white)](https://github.com/Shayanakbar90/DecodeLabs-RuleBasedAIChatbot)
+[![Live Application](https://img.shields.io/badge/Live_App-Open-FF4B4B?logo=streamlit&logoColor=white)](https://decodelabs-rulebasedaichatbot-bpelv2npnxfmvtqegtv6ui.streamlit.app/)
+
+This project was developed as part of the **DecodeLabs Artificial Intelligence Training Program** to demonstrate the design and deployment of a rule-based conversational application using Python and Streamlit.
+
+---
 
 <div align="center">
 
-Built with Python and Streamlit
+### Built with Python and Streamlit
 
-⭐ Star the repository if you found the project useful.
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Web_App-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
 
-</div> ```
+**⭐ Star the repository if you found the project useful.**
+
+</div>
