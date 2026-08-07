@@ -481,3 +481,16 @@ If you found this project useful, consider giving the repository a star.
 Built with Python, Streamlit, and deterministic conversational logic.
 
 </div> ```
+Author
+Shayan Akbar
+
+Developed as part of the DecodeLabs Artificial Intelligence Industrial Training Program.
+
+GitHub Profile: Shayanakbar90
+Project Repository: DecodeLabs-RuleBasedAIChatbot
+Live Application: Nova Rule-Based AI Chatbot
+Acknowledgement
+
+This project was completed as part of the DecodeLabs Artificial Intelligence training program to strengthen practical understanding of Python programming, rule-based systems, conversational application design, web-interface development, and cloud deployment.
+
+<div align="center">
