@@ -1,97 +1,210 @@
 <div align="center">
 
-# 🤖 Nova — Rule-Based AI Chatbot
+Nova — Rule-Based AI Chatbot
 
-### A deterministic conversational chatbot developed with Python and Streamlit
+A simple rule-based chatbot built with Python and Streamlit.
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-Web%20Application-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![Status](https://img.shields.io/badge/Status-Completed-2EA44F)]()
-[![Deployment](https://img.shields.io/badge/Deployment-Live-success)](https://decodelabs-rulebasedaichatbot-bpelv2npnxfmvtqegtv6ui.streamlit.app/)
-
-[🚀 Launch Live Application](https://decodelabs-rulebasedaichatbot-bpelv2npnxfmvtqegtv6ui.streamlit.app/) •
-[💻 View Source Code](https://github.com/Shayanakbar90/DecodeLabs-RuleBasedAIChatbot)
+Live Demo ·Source Code
 
 </div>
 
----
+About the Project
 
-## Overview
+Nova is a rule-based chatbot developed as part of the DecodeLabs Artificial Intelligence training program. It responds to predefined user inputs through a structured set of rules.
 
-**Nova** is a rule-based conversational chatbot developed as part of the **DecodeLabs Artificial Intelligence Industrial Training Program**.
+The project demonstrates basic chatbot development concepts, including input normalization, response matching, fallback handling, session-based chat history, and web deployment with Streamlit.
 
-The project demonstrates how a chatbot can process user input, match it against predefined conversational rules, and return consistent responses through a structured decision-making system.
+Unlike generative AI systems, Nova does not create new responses or use a trained language model. It returns predefined responses based on recognized user messages.
 
-Unlike machine-learning or generative AI chatbots, Nova does not generate responses using a trained model or external API. Instead, it uses deterministic Python logic, predefined response mappings, input normalization, exit-command detection, and fallback handling.
+Features
 
-The chatbot includes both:
+Predefined rule-based responses
 
-- A web-based interface developed with Streamlit
-- A command-line interface developed with Python
+Input normalization
 
-This modular structure separates the chatbot engine from the presentation layer, making the application easier to understand, test, maintain, and extend.
+Fallback response for unsupported messages
 
----
+Exit-command handling
 
-## Live Application
+Streamlit chat interface
 
-The deployed chatbot is available through Streamlit Community Cloud.
+Session-based conversation history
 
-### [Open Nova Rule-Based AI Chatbot](https://decodelabs-rulebasedaichatbot-bpelv2npnxfmvtqegtv6ui.streamlit.app/)
+Command-line version
 
-The live application allows users to:
+Live deployment
 
-- Send messages through an interactive chat interface
-- View the complete conversation during the active session
-- Test predefined questions and commands
-- Receive controlled fallback responses
-- End a conversation using exit commands
-- Restart the conversation using the sidebar
-- Review example questions supported by the chatbot
+Technologies Used
 
----
+Technology
 
-## Project Objectives
+Purpose
 
-The main objectives of this project were to:
+Python
 
-- Understand the fundamental architecture of rule-based chatbots
-- Build a deterministic conversational response system
-- Store predefined responses using Python dictionaries
-- Normalize user input before rule matching
-- Handle empty and unsupported messages safely
-- Detect commands that end the conversation
-- Develop a continuous command-line conversation loop
-- Create a browser-based chatbot interface with Streamlit
-- Separate application logic from interface logic
-- Deploy the completed project as a publicly accessible web application
+Core chatbot logic
 
----
+Streamlit
 
-## Key Features
+Web interface
 
-### Deterministic Response Engine
+GitHub
 
-Nova uses predefined rules to generate responses. The same recognized input always produces the same output.
+Source-code hosting
 
-This makes the chatbot:
+Streamlit Community Cloud
 
-- Predictable
-- Transparent
-- Easy to test
-- Easy to control
-- Suitable for structured conversations
+Application deployment
 
-### Input Normalization
+Project Structure
 
-Before attempting to match a user message, the chatbot cleans the input by:
+DecodeLabs-RuleBasedAIChatbot/
+├── app.py
+├── chatbot.py
+├── requirements.txt
+├── chatbot-demo.png
+├── chatbot-demo-2.png
+├── README.md
+└── .gitignore
 
-- Converting text to lowercase
-- Removing leading spaces
-- Removing trailing spaces
-- Reducing unnecessary whitespace
+How It Works
 
-For example:
+The user enters a message.
 
-```text
-"   WHAT IS YOUR NAME   "
+The chatbot converts the input to lowercase and removes extra spaces.
+
+It checks whether the message is an exit command.
+
+It searches for the message in the predefined response dictionary.
+
+It returns the matching response or a fallback message.
+
+A simplified version of the response logic is:
+
+clean_input = normalize_input(user_input)
+
+if clean_input in EXIT_COMMANDS:
+    return exit_response, True
+
+return RESPONSES.get(clean_input, FALLBACK_RESPONSE), False
+
+Supported Inputs
+
+The chatbot can respond to messages such as:
+
+hello
+
+hi
+
+how are you
+
+what is your name
+
+what can you do
+
+what is artificial intelligence
+
+what is a rule based chatbot
+
+tell me about this project
+
+help
+
+thanks
+
+bye
+
+exit
+
+Messages outside the predefined rule set receive a fallback response.
+
+Live Application
+
+Open the deployed application:
+
+Launch Nova Rule-Based AI Chatbot
+
+Installation
+
+1. Clone the repository
+
+git clone https://github.com/Shayanakbar90/DecodeLabs-RuleBasedAIChatbot.git
+cd DecodeLabs-RuleBasedAIChatbot
+
+2. Create a virtual environment
+
+Windows
+
+python -m venv venv
+venv\Scripts\activate
+
+macOS or Linux
+
+python3 -m venv venv
+source venv/bin/activate
+
+3. Install dependencies
+
+pip install -r requirements.txt
+
+Run the Project
+
+Streamlit web application
+
+streamlit run app.py
+
+Command-line application
+
+python chatbot.py
+
+Example Conversation
+
+User: hello
+Nova: Hello! How can I help you today?
+
+User: what is your name
+Nova: My name is Nova. I am a rule-based chatbot.
+
+User: something unknown
+Nova: I don't understand that yet. Type 'help' to see what you can ask.
+
+User: exit
+Nova: Goodbye! Thanks for chatting with me.
+
+Limitations
+
+Responds only to predefined inputs
+
+Does not understand context or semantic meaning
+
+Does not learn from conversations
+
+Does not use machine learning or an external AI API
+
+Does not permanently store chat history
+
+Possible Improvements
+
+Add keyword-based intent matching
+
+Support multiple phrases for the same intent
+
+Add fuzzy matching for spelling mistakes
+
+Expand the response set
+
+Add persistent conversation storage
+
+Add automated tests
+
+Author
+
+Shayan Akbar
+
+Developed as part of the DecodeLabs Artificial Intelligence training program.
+
+GitHub: Shayanakbar90
+
+Repository: DecodeLabs-RuleBasedAIChatbot
+
+Live App: Nova Chatbot
