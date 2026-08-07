@@ -97,12 +97,9 @@ For example:
 "   WHAT IS YOUR NAME   "
 
 
-Example Conversation
+## Example Conversation
 
-<table>
-<tr>
-<td>
-
+```text
 User: hello
 Nova: Hello! How can I help you today?
 
@@ -115,44 +112,47 @@ Nova: I don't understand that yet. Type 'help' to see what you can ask.
 User: exit
 Nova: Goodbye! Thanks for chatting with me.
 
-</td>
-</tr>
-</table>
-
-Project Limitations
-
+Limitations
 Responds only to predefined inputs
-
-Does not understand context or semantic meaning
-
-Does not learn from conversations
-
-Does not use machine learning or an external AI API
-
+Does not understand conversation context
+Does not learn from previous interactions
+Does not use machine learning or a language model
 Does not permanently store chat history
-
-Future Enhancements
-
+May not recognize differently worded questions
+Future Improvements
 Add keyword-based intent matching
-
-Support multiple phrases for the same intent
-
+Support multiple phrases for each response
 Add fuzzy matching for spelling mistakes
+Expand the chatbot response library
+Store conversation history in a database
+Add automated testing
+Improve the user interface
+Add multilingual support
+Project Status
 
-Expand the response set
 
-Add persistent conversation storage
 
-Add automated tests
+
+The project is complete and publicly available through Streamlit Community Cloud.
+
+Launch Live Application
+
+Author
+Shayan Akbar
+
+Artificial Intelligence Intern — DecodeLabs
+
+
+
+
+
+
+This project was developed as part of the DecodeLabs Artificial Intelligence Training Program to demonstrate the implementation and deployment of a rule-based conversational application using Python and Streamlit.
 
 <div align="center">
 
-Author
+Built with Python and Streamlit
 
-Shayan Akbar
+⭐ Star the repository if you found the project useful.
 
-Developed as part of the DecodeLabs Artificial Intelligence Training Program.
-
-
-
-</div>
+</div> ```
